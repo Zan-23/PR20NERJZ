@@ -1,1 +1,1 @@
-
+Delovni zvezki članov skupine
