@@ -1,8 +1,8 @@
 # Mapa za podatke
 V tej mapi se nahajajo vsi podatki katere smo uporabili za izdelavo projektne naloge.
 
-EU gripa: 
-https://gateway.euro.who.int/en/indicators/hfamdb_405-deaths-influenza/
+EU gripa.csv: 
+https://gateway.euro.who.int/en/indicators/hfamdb_405-deaths-influenza/ 
 
 EU korona:
 https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data
