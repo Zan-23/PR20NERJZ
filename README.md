@@ -3,7 +3,7 @@
 Člani skupine:
 - Žan Stanonik (Zan-23)
 - Jaka Rizmal 
-- Rok Šimic 
+- Rok Šimic (rs1399)
 - Nikolaj Popovič 
 - Enej Bačić (xineeeee)
 
