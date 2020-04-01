@@ -5,6 +5,7 @@ EU gripa.csv:
 |-> https://gateway.euro.who.int/en/indicators/hfamdb_405-deaths-influenza/ 
     |- Link do podatkov
        |-> 
+       
 EU korona:
 |-> https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data
     |- Link do podatkov
