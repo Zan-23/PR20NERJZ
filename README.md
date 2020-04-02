@@ -53,6 +53,8 @@ Graf prikazuje starost v Nigru.
 
 Graf prikazuje starost v Japonski.
 
+Med seboj bomo primerjali starostne distribucije prebivalstva in vpliv Covid19 in gripe glede na distribucijo.
+
 ![Avstrija smrti](https://raw.githubusercontent.com/Zan-23/PR20NERJZ/master/grafi/Avstrija_smrti.JPG)
 
 Število mrtvih po letih zaradi gripe v sosednji državi Avstriji. Vidimo, da število mrtvih z leti upada. 
