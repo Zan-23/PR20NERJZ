@@ -51,7 +51,7 @@ Graf prikazuje starost v Nigru.
 
 ![Japan](https://raw.githubusercontent.com/Zan-23/PR20NERJZ/master/grafi/Japan.png)
 
-Graf prikazuje starost v Japanu.
+Graf prikazuje starost v Japonski.
 
 ![Avstrija smrti](https://raw.githubusercontent.com/Zan-23/PR20NERJZ/master/grafi/Avstrija_smrti.JPG)
 
