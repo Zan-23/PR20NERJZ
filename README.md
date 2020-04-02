@@ -7,7 +7,7 @@ Asistenta: Rok Gomišček in Amra Omanović
 
 Člani skupine:
 - Žan Stanonik (Zan-23)
-- Jaka Rizmal 
+- Jaka Rizmal (jrizmal)
 - Rok Šimic (rs1399)
 - Nikolaj Popovič 
 - Enej Bačić (xineeeee)
