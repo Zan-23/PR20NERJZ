@@ -53,7 +53,7 @@ Graf prikazuje starost v Nigru.
 
 Graf prikazuje starost v Japonski.
 
-Med seboj bomo primerjali starostne distribucije prebivalstva in vpliv Covid19 in gripe glede na distribucijo.
+Med seboj bomo primerjali starostne distribucije prebivalstva in vpliv Covid19 in gripe glede na distribucijo ter probali ugotoviti če so države s starejšo distribucijo prebivalstva bolj podvržene gripi.
 
 ![Avstrija smrti](https://raw.githubusercontent.com/Zan-23/PR20NERJZ/master/grafi/Avstrija_smrti.JPG)
 
