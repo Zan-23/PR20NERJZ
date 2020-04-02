@@ -26,7 +26,7 @@ Cilji in problemi:
 - primerjava Slovenije po podatkih o Covid19 in sosednjih držav
 - smrti zaradi korona uravnotežene z številom populacije ki ima v državi najvišje tveganje da umre
 
-#### Uporabljene knjižnjice in programi: !! popravit knjznjice dodat verzije 
+#### Uporabljene knjižnjice in programi:
 - matplotlib
 - pandas
 - numpy
