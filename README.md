@@ -26,7 +26,7 @@ Cilji in problemi:
 - primerjava Slovenije po podatkih o Covid19 in sosednjih držav
 - smrti zaradi korona uravnotežene z številom populacije ki ima v državi najvišje tveganje da umre
 
-#### Uporabljene knjižnjice in programi: !! popravit knjznjice dodat verzije 
+#### Uporabljene knjižnjice in programi:
 - matplotlib
 - pandas
 - numpy
@@ -51,7 +51,9 @@ Graf prikazuje starost v Nigru.
 
 ![Japan](https://raw.githubusercontent.com/Zan-23/PR20NERJZ/master/grafi/Japan.png)
 
-Graf prikazuje starost v Japanu.
+Graf prikazuje starost v Japonski.
+
+Med seboj bomo primerjali starostne distribucije prebivalstva in vpliv Covid19 in gripe glede na distribucijo ter probali ugotoviti če so države s starejšo distribucijo prebivalstva bolj podvržene gripi.
 
 ![Avstrija smrti](https://raw.githubusercontent.com/Zan-23/PR20NERJZ/master/grafi/Avstrija_smrti.JPG)
 
