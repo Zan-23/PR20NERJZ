@@ -158,9 +158,10 @@ def month_deaths(deaths_dict):
             for key in keys:
                 sum_deadth += deaths_dict[key]
             avg = sum_deadth / 12.0
-            return avg
+            return (avg, sum_deadth)
     else:
-        return "(No data)"
+        tuple_f = ("(No data)", "(No data)")
+        return tuple_f
     
 
 def draw_bar_chart_mortality(year1, year2, country): 

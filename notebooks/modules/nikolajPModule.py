@@ -19,9 +19,6 @@ import matplotlib.pyplot as pltnk
 def test_nikolaj():
     print("How you doin")
 
-
-%matplotlib inline
-
 def read_csv():
     reader = pd.read_csv(r"..\podatki\US_gripa.csv")
     virus_array = reader.get_values()    #create array of data
