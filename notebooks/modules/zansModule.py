@@ -91,7 +91,7 @@ def get_age_distribution_array(data_set, country, date):  # works only for multi
 
         return distribution_array
 
-def draw_bar_chart_distribution(year_and_pop_ar, country):
+def draw_bar_chart_distribution(year_and_pop_ar, country, date):
     # takes in an array on which the first index is a year and second num of people, also a country
     fig=plt.figure(figsize=(10, 6), dpi= 100, facecolor='w')
     plt.barh([i[0] for i in year_and_pop_ar], [i[1] for i in year_and_pop_ar], 
@@ -99,7 +99,7 @@ def draw_bar_chart_distribution(year_and_pop_ar, country):
     #plt.grid(color='#95a5a6', linestyle='--', linewidth=2, axis='y', alpha=0.7)
     plt.xlabel('Number in thousands')
     plt.ylabel('Years')
-    plt.title(country + ' population age distribution')
+    plt.title(country + ' population age distribution for year ' + str(date))
     plt.show()
 
 
@@ -184,7 +184,7 @@ def draw_bar_chart_mortality(year1, year2, country):
             # plt.margins(x=0)
             plt.xlabel('Months')
             plt.ylabel('Number of deaths')
-            plt.title(country + ' mortality')
+            plt.title(country + ' mortality in years ' + str(year2) + "-" + str(year1))
             plt.legend()
             plt.show()
         else:
