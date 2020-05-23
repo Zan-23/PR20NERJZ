@@ -134,3 +134,34 @@ def readDeathData(year=2015):
     # Only use 2015 data
     deathFrame=deathFrame[deathFrame["Year"]==year]
     return deathFrame
+
+
+def createMonthDeathDictionary(deathFrame,populationFrame,countryList,months):
+    # Make a dictionary with country for key and array of deaths per each month per million eg. {"Slovenia": [2,3,5,2,4,2,4,5,3,2,4,5]}
+    monthDeaths = dict()
+    for cou in countryList:
+        monthDeaths[cou]=[]
+        population = getCountryPopulation(populationFrame,2015,cou)    
+        for m in months:
+            deathCount = deathFrame[(deathFrame["Country or Area"]==cou)&(deathFrame["Month"]==m)]["Value"]
+            if not deathCount.empty:
+                realCount = deathCount.iloc[0]
+                monthDeaths[cou].append(realCount/population*1000)
+
+    deaths = dict()
+    # Remove empty values
+    for c in monthDeaths.keys():
+        if len(monthDeaths[c]) == 12:
+            deaths[c] = monthDeaths[c]
+
+    return deaths
+
+
+def createMatrixAndLabels(dictionary):
+    # Making a matrix
+    labels = list(dictionary.keys())
+    matrix = []
+    for c in labels:
+        matrix.append(dictionary[c])
+    
+    return (matrix, labels)
