@@ -7,12 +7,14 @@ from collections import defaultdict
 from scipy.stats import multivariate_normal as mvn
 import scipy.cluster.hierarchy as sch
 import pandas as pandas
+import pandas as pd
 import os
 import sys
 import json
 import numpy as np
 import math
 import random
+import csv
 import matplotlib.pyplot as pltnk
 # here you put your functions
 
@@ -20,7 +22,7 @@ def test_nikolaj():
     print("How you doin")
 
 def read_csv():
-    reader = pd.read_csv(r"..\podatki\US_gripa.csv")
+    reader = pandas.read_csv(r"..\podatki\US_gripa.csv")
     virus_array = reader.get_values()    #create array of data
     reader.head()
     Geop = reader["geoid"]
@@ -223,7 +225,7 @@ def Clutr(nmatrix,labels):
     plt.show()
 
 
-def DeathUsaCovid():
+def DeathUsaCovid(america,dg):
     suma1 = 0
     okuzb = 0
     for m in america:
@@ -233,7 +235,7 @@ def DeathUsaCovid():
     smrti1 = dg
     ns = [suma1 for deathm in range(len(dg))]
     return smrti1,ns,okuzb
-def CorgRip(leta,ns,smrti):
+def CorgRip(leta,ns,smrti1):
     x = np.arange(len(leta))  # the label locations
     width = 0.38  # the width of the bars
     fig, ax = plt.subplots()
@@ -286,7 +288,7 @@ def Ocena_statistike(smrtnosti):
     sigma2 = (n-1)/n * np.var(data) # ocena variance
     return n,mu,sigma2,data
 
-def risi(data):
+def risi(data,mu,sigma2):
     plt.figure()
     counts, bins, _ = plt.hist(data, normed=True, label="vzorec", bins=10)
     pdf = [mvn.pdf(x, mu, sigma2) for x in bins]
