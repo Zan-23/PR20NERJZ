@@ -53,5 +53,3 @@ def linearna(pop_by_sex):
     plt.xlabel("Starost")
     plt.ylabel("Koeficient smrti")
     plt.show()
-
-linearna(pop_by_sex)
