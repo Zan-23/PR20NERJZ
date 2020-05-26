@@ -8,7 +8,7 @@ def priprava(avg_age_all_df,country,pop_by_sex):
     avg_age_df_spain = avg_age_df_2020.loc[avg_age_df['Region-Country'] == country]
 
     #priprava podatkov za corono
-    corona_smrti_koeficient = pandas.read_csv(r"../../podatki/podatki/corona_latest.csv")
+    corona_smrti_koeficient = pandas.read_csv(r"../podatki/corona_latest.csv")
     corona_smrti_koeficient = corona_smrti_koeficient.loc[corona_smrti_koeficient['year'] == 2020]
     corona_smrti_koeficient = corona_smrti_koeficient.loc[corona_smrti_koeficient['countriesAndTerritories'] == country]
     corona_final1 = corona_smrti_koeficient.loc[:, ['deaths','popData2018']]
