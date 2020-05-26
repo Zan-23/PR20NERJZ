@@ -4,10 +4,7 @@ import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
-
-def readCorona():
-    reader = pd.read_csv(r"..\podatki\corona_worldwide.csv")
-    virus_array = reader.to_numpy()    #create array of data
+   
 
 def drawPlot(array, country_name, search):   
     my_lines = []
@@ -157,8 +154,15 @@ def compare(array, first_country, second_country, search):
     plt.grid(alpha=0.7)
     
 def showCountermeasures(country):
-    ex_reader = pd.read_excel("../podatki/countermeasures/" + country + ".xlsx")
-    c_array = ex_reader.to_numpy()
-    for line in c_array:
-        print(line[0] + ": " + line[1])
-showCountermeasures("slovenia")   
+    from pathlib import Path
+    
+    my_file = Path("../podatki/countermeasures/" + country + ".xlsx")
+    
+    if my_file.is_file():
+        ex_reader = pd.read_excel("../podatki/countermeasures/" + country + ".xlsx")
+        c_array = ex_reader.to_numpy()
+        for line in c_array:
+            print(line[0] + ": " + line[1])
+    else:
+        print("No countermeasure data found.")
+    
