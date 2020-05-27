@@ -23,7 +23,6 @@ def test_nikolaj():
 
 def read_csv():
     reader = pandas.read_csv(r"..\podatki\US_gripa.csv")
-    virus_array = reader.get_values()    #create array of data
     reader.head()
     Geop = reader["geoid"]
     Regija = reader["Region"]

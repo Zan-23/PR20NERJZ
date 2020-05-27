@@ -97,6 +97,7 @@ def linearna(pop_by_sex):
     linear_regressor = LinearRegression()
     linear_regressor.fit(X, Y)
     Y_pred = linear_regressor.predict(X)
+    fig=plt.figure(figsize=(8, 6), dpi= 100, facecolor='w')
     plt.scatter(X, Y)
     plt.plot(X, Y_pred, color='red')
     plt.xlabel("Starost")
