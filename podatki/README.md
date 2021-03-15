@@ -14,7 +14,7 @@ EU korona:
 US gripa:
 |->https://healthdata.gov/dataset/deaths-pneumonia-and-influenza-pi-and-all-deaths-state-and-region-national-center-health-0#{currentView:!grid}
     |- Link do podatkov
-       |-> https://healthdata.gov/node/3079401/download
+       |-> https://legacy.healthdata.gov/node/3079401/download
 
 UN populacija:
 |-> https://population.un.org/wpp/Download/Standard/Population/
